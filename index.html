@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="conversiones.js"></script>
+    <title>Conversión Decimal</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <h1>Conversiones</h1>
+                    <div class="field">
+                        <label class="label">Decimal</label>
+                        <div class="control">
+                            <input id="decimal" class="input is-rounded" type="number" placeholder="123,6" />
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="botonBinario" class="button is-info is-light">Convertir a binario</button>
+                        <button id="botonOctal" class="button is-success is-light">Convertir a octal</button>
+                        <button id="botonHexadecimal" class="button is-link is-light">Convertir a
+                            hexadecimal</button>
+                    </div>
+                    <span id="mensajeError"></span>
+                    <h3 id="resultados">Resultados:</h3>
+                    <p id="contResultBin"><b>Binario:</b> <span id="binarioResultado"></span></p>
+                    <p id="contResultOctal"><b>Octal:</b> <span id="octalResultado"></span></p>
+                    <p id="contResultHexadecimal"><b>Hexadecimal:</b> <span id="hexadecimalResultado"></span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer class="footer">
+        <p>
+            Hecho por
+            <strong>Melissa Romero</strong> y
+            <strong>Juliana Melo</strong>
+        </p>
+    </footer>
+
+</body>
+
+</html>
