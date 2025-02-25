@@ -20,9 +20,9 @@ const limpiarResultados = () => {
 };
 
 const validarValorDecimal = (valor) => {
-    if (valor === null || isNaN(valor)) { // Usar 'valor' correctamente
+    if (valor === null || isNaN(valor)) { 
         document.getElementById("mensajeError").textContent = "Ingresa un decimal por favor";
-        document.getElementById("mensajeError").style.display = "block"; // Mostrar el error
+        document.getElementById("mensajeError").style.display = "block"; 
         return false;
     } else {
         document.getElementById("mensajeError").textContent = "";
@@ -33,7 +33,7 @@ const validarValorDecimal = (valor) => {
 
 const convertirBinario = () => {
     let valorDecimal = parseInt(document.getElementById("decimal").value);
-    if (!validarValorDecimal(valorDecimal)) return; // Validar antes de continuar
+    if (!validarValorDecimal(valorDecimal)) return; 
 
     let binario = "";
     while (valorDecimal > 0) {
